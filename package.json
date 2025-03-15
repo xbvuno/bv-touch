@@ -1,6 +1,6 @@
 {
 	"name": "bv-touch",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Create a file or directory at the specified path, creating missing directories",
 	"main": "index.js",
 	"scripts": {
