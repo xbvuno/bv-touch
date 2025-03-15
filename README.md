@@ -1,4 +1,3 @@
-
 # bv-touch
 
 `bv-touch` is a Node.js command-line tool that allows you to create files or directories at the specified path, automatically creating any missing directories along the way.
@@ -23,18 +22,20 @@ Where `<path>` is the relative or absolute path where you want to create a file 
 
 ### Options
 
-- `-v, --verbose`: Enable verbose output.
-- `-a, --abs`: In case of relative path, show the absolute path.
+- `-v, --verbose` : Enable verbose output.
+- `-a, --abs` : In case of relative path, show the absolute path.
+- `-c, --check` : Check if the file or directory exists without creating anything.
+- `-n, --no-create` : Do not create missing directories or files, only check the last part of the path.
 
-### Example
+### Examples
 
 #### Create a directory:
 
 ```bash
-bv-touch myfolder/subfolder
+bv-touch myfolder/subfolder/
 ```
 
-If `myfolder` or `subfolder` does not exist, they will be created. 
+If `myfolder` or `subfolder` does not exist, they will be created.
 
 #### Create a file:
 
@@ -56,12 +57,25 @@ bv-touch myfolder/subfolder -v
 bv-touch myfolder/subfolder -a
 ```
 
+#### Check if a file or directory exists (without creating anything):
+
+```bash
+bv-touch myfolder/myfile.txt -c
+```
+
+#### Do not create missing directories, only create the last file if possible:
+
+```bash
+bv-touch myfolder/myfile.txt -n
+```
+
 ### Output
 
 When you run the command, it will output the following:
 - If directories or files are created, it will log their creation.
 - If directories or files already exist, it will log a warning.
 - If a file exists when a directory is required (or vice versa), an error message will be shown.
+- If using `--check`, it will only inform you whether the path exists or not.
 
 ### Example Output
 
@@ -74,3 +88,4 @@ When you run the command, it will output the following:
 ## License
 
 This project is licensed under the ISC License - see the [LICENSE](./LICENSE) file for details.
+
