@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+/*   ____    https://4bv.uno 
+    /   /\_________________________
+   /  +  /  /  _/ /  /      /  +  /\  
+  /_____/_____/______/__/__/_____/ /
+  \_____\_____\______\__\__\_____\/ 
+
+*/
+
 const fs = require("fs-extra");
 const path = require("path");
 const os = require("os");
