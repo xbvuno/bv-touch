@@ -1,6 +1,6 @@
 {
 	"name": "bv-touch",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Create a file or directory at the specified path, creating missing directories",
 	"main": "index.js",
 	"scripts": {
@@ -13,7 +13,19 @@
 	"keywords": [
 		"cli",
 		"touch",
-		"node"
+		"node",
+		"create",
+		"file",
+		"directory",
+		"path",
+		"filesystem",
+		"mkdir",
+		"file-system",
+		"create-file",
+		"create-dir",
+		"mkdirp",
+		"node-cli",
+		"command-line"
 	],
 	"author": "xbvuno",
 	"license": "ISC",
