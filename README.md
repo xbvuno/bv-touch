@@ -73,4 +73,4 @@ When you run the command, it will output the following:
 
 ## License
 
-MIT License
+This project is licensed under the ISC License - see the [LICENSE](./LICENSE) file for details.
