@@ -1,0 +1,31 @@
+{
+	"name": "bv-touch",
+	"version": "1.0.0",
+	"description": "Create a file or directory at the specified path, creating missing directories",
+	"main": "index.js",
+	"scripts": {
+		"test": "bv-touch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xbvuno/bv-touch.git"
+	},
+	"keywords": [
+		"cli",
+		"touch",
+		"node"
+	],
+	"author": "xbvuno",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/xbvuno/bv-touch/issues"
+	},
+	"homepage": "https://github.com/xbvuno/bv-touch#readme",
+	"bin": {
+		"bv-touch": "./index.js"
+	},
+	"dependencies": {
+		"commander": "^13.1.0",
+		"fs-extra": "^11.3.0"
+	}
+}
