@@ -48,13 +48,13 @@ If `myfolder` does not exist, it will be created and then `myfile.txt` will be c
 #### Enable verbose output:
 
 ```bash
-bv-touch myfolder/subfolder -v
+bv-touch myfolder/subfolder/ -v
 ```
 
 #### Show absolute path:
 
 ```bash
-bv-touch myfolder/subfolder -a
+bv-touch myfolder/subfolder/ -a
 ```
 
 #### Check if a file or directory exists (without creating anything):
@@ -80,8 +80,12 @@ When you run the command, it will output the following:
 ### Example Output
 
 ```bash
-[bv-touch] destination: /absolute/path/to/myfolder/subfolder
-[bv-touch] created dir: ./myfolder/subfolder
+[bv-touch] destination: /absolute/path/to/myfolder/subfolder/
+[bv-touch] created dir: ./myfolder/subfolder/
+[bv-touch] to the dir:  
+
+        cd ./myfolder/subfolder/
+
 [bv-touch] Done!
 ```
 
